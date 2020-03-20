@@ -12,7 +12,7 @@ function getTasks() {
   return db("tasks")
     .join("projects", "tasks.projectId", "projects.projectId")
     .select(
-      "tasks.taskId",
+      "tasks.taskID",
       "projects.title",
       "projects.projectDescription",
       "tasks.taskDescription",
